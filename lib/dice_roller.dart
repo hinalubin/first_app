@@ -11,7 +11,7 @@ class DiceRoller extends StatefulWidget {
 }
 
 class _DiceRollerState extends State<DiceRoller> {
-  var currentDiceRoll = 1;
+  var currentDiceRoll = 2;
 
   void rollDice() {
     setState(() {
