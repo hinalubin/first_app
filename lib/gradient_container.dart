@@ -1,4 +1,5 @@
 import 'package:first_app/dice_roller.dart';
+import 'package:first_app/styled_text.dart';
 import 'package:flutter/material.dart';
 
 const startAlignment = Alignment.topLeft;
@@ -20,7 +21,14 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: Center(child: DiceRoller()),
+      child: Column(
+        children: [
+          SizedBox(height: 100),
+          StyledText('ROLL MASTER'),
+          SizedBox(height: 180),
+          Center(child: DiceRoller()),
+        ],
+      ),
     );
   }
 }
